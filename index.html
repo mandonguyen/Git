@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Tao menu</title>
+</head>
+<style>
+	*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+  text-decoration: none;
+  color: #fff; 
+  font-size: 16px;
+  font-weight: bold;
+}
+#wrapper{
+  width: 800px;
+  margin: auto;
+  height: 500px;
+  background: #b3b3b3;
+}
+#main_menu{
+  background: green;
+  margin-top: 30px;
+}
+.clear{clear: both;}
+#main_menu>ul>li{
+  position: relative;
+  float: left;
+  padding: 11px 27px;
+  border-right: 1px dotted #ACACAC;
+}
+#main_menu>ul>li:last-child{
+  border-right: none;
+}
+#main_menu>ul>li>ul{
+  display: none;
+  position: absolute;
+  background: green;
+  top: 40px;
+  left: 0px;
+  width: 150px;
+}
+#main_menu>ul>li:hover ul{
+  display: block;
+}
+#main_menu ul li:hover{
+  background: #5f5c5c;
+  transition: all 0.25s;
+}
+#main_menu>ul>li>ul>li{
+  padding: 8px 10px;
+    border-bottom: 1px dotted #ACACAC;
+}
+</style>
+  <body>
+    <div id="wrapper">
+      <div id="main_menu">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a>
+            <ul>
+              <li><a href="">Menu con 1</a></li>
+              <li><a href="">Menu con 2</a></li>
+              <li><a href="">Menu con 3</a></li>
+              <li><a href="">Menu con 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="#">Hình ảnh</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      
+    </div>
+  </body>
+</html>
